@@ -88,3 +88,31 @@ function drawSeaotter(x,y) {
   
   pop();
 }
+
+function drawUmbrella(x,y,ro) {
+  push()
+  translate(x,y)
+  scale(0.35)
+  rotate(ro)
+  
+  //umbrella
+  fill(200)
+  rect(-20,0,40,300)
+  fill(150)
+  rect(-25,200,50,100)
+  
+  noStroke();
+  fill(255,50,70)
+  arc(0,0,500,400,PI,0)
+  triangle(-250,0,-250,20,-150,0)
+  triangle(-150,0,-100,20,-50,0)
+  triangle(-50,0,0,20,50,0)
+  triangle(50,0,100,20,150,0)
+  triangle(150,0,250,20,250,0)
+  stroke(0);
+  line(0,-200,-180,5)
+  line(0,-200,0,20)
+  line(0,-200,180,5)
+  
+  pop()
+}
