@@ -25,8 +25,11 @@ function draw() {
   }
   xOtter = xOtter + 5;
   }
+  // pacman
+  drawPacman(269,65);
   
   drawUmbrella(270, 100, ro);
+
 }
 
 function drawSeaotter(x,y) {
@@ -174,4 +177,8 @@ function mouseClicked() //umbrella handle
   if(mouseX>0&&mouseX<225&&mouseY<100&&mouseY>0)
   clicked = !clicked;      
   
+}
+function drawPacman(x,y){
+  fill('#F0E35E');
+  arc(x,y,65,65,0,7*PI/4);
 }
