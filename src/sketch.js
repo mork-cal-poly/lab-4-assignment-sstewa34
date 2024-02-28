@@ -27,7 +27,7 @@ function draw() {
   }
   // pacman
   drawPacman(269,65);
-  
+
   drawUmbrella(270, 100, ro);
 
 }
